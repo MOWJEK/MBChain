@@ -97,10 +97,6 @@ class Blockchain:
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// Import OpenZeppelin libraries
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
 // Token contract with additional logging and ownership control
 contract UpdatedToken is ERC20, Ownable {
     // Event to log token transfers with more details
