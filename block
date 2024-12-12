@@ -113,10 +113,5 @@ contract UpdatedToken is ERC20, Ownable {
         return true;
     }
 
-    // Admin-only function to mint new tokens
-    function mintTokens(address to, uint256 amount) external onlyOwner {
-        _mint(to, amount);
-    }
-
 
 
