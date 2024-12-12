@@ -106,12 +106,7 @@ contract UpdatedToken is ERC20, Ownable {
         _mint(msg.sender, 100000 * 10**decimals()); // Mint initial tokens
     }
 
-    // Function to transfer tokens with a custom message
-    function transferWithMessage(address to, uint256 amount, string memory message) public returns (bool) {
-        _transfer(msg.sender, to, amount);
-        emit DetailedTransfer(msg.sender, to, amount, message);
-        return true;
-    }
+
 
 
 
