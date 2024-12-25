@@ -94,8 +94,6 @@ class Blockchain:
             if current_block.previous_hash != previous_block.hash:
                 return False
         return True
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
 
 
 
