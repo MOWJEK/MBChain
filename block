@@ -77,13 +77,6 @@ class Blockchain:
             print("No transactions to mine.")
             return
 
-        new_block = Block(
-            index=len(self.chain),
-            previous_hash=self.chain[-1].hash,
-            transactions=self.pending_transactions
-        )
-        self.chain.append(new_block)
-        self.pending_transactions = []
 
 
 
