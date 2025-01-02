@@ -72,11 +72,6 @@ class Blockchain:
         tx = Transaction(sender, receiver, amount)
         self.pending_transactions.append(tx)
 
-    def mine_pending_transactions(self):
-        if not self.pending_transactions:
-            print("No transactions to mine.")
-            return
-
 
 
 
