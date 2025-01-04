@@ -68,10 +68,6 @@ class Blockchain:
     def create_genesis_block(self):
         return Block(0, "0", [], time.time())
 
-    def add_transaction(self, sender, receiver, amount):
-        tx = Transaction(sender, receiver, amount)
-        self.pending_transactions.append(tx)
-
 
 
 
