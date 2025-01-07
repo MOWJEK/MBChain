@@ -55,10 +55,6 @@ class Block:
         self.timestamp = timestamp or time.time()
         self.hash = self.calculate_hash()
 
-    def calculate_hash(self):
-        transaction_data = "".join(str(tx) for tx in self.transactions)
-        block_string = f"{self.index}{self.previous_hash}{transaction_data}{self.timestamp}"
-        return hashlib.sha256(block_string.encode()).hexdigest()
 
 
 
