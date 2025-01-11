@@ -48,12 +48,7 @@ class Transaction:
         return f"{self.sender} -> {self.receiver}: {self.amount}"
 
 class Block:
-    def __init__(self, index, previous_hash, transactions, timestamp=None):
-        self.index = index
-        self.previous_hash = previous_hash
-        self.transactions = transactions  # Updated to store transactions
-        self.timestamp = timestamp or time.time()
-        self.hash = self.calculate_hash()
+    def __init__(self, index, previous_hash, transactions, timestamp=None)
 
 
 
