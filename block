@@ -28,7 +28,12 @@ class Blockchain:
             data=data
         )
         self.chain.append(new_block)
-
+    def add_block(self, data):
+        previous_block = self.get_latest_block()
+        new_block = Block(
+            index=previous_block.index + 1,
+            previous_hash=previous_block.hash,
+            data=data
 
 
 
